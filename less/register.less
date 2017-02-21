@@ -1,0 +1,93 @@
+
+// Mixin itself
+.clearfix() {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+body{
+    background-color: #000;
+}
+li{
+	padding-left: 30px;
+	padding-right: 30px;
+}
+.btncss{
+    padding-top: 8px ;
+    padding-left: 8px;
+}
+#sign{
+    color: #fff;
+}
+.logindiv{
+  	width: 400px;
+  	height: 200px;
+  	border-radius: 0px;
+  	padding-top: 50px;
+  	z-index: 9999;
+ 	margin-top: 130px;
+  	margin-left: -200px;
+  	background-color: rgba(255,255,255,0.5);
+  	position: absolute;
+  	input,button{
+		border-radius: 0px;	
+	}
+}
+#eventForm .form-control-feedback {
+    top: 0;
+    right: -15px;
+}
+.content{
+	margin-top:100px;	
+	font-family: '微软雅黑';
+	overflow: hidden;
+	blockquote{
+		margin-left:5%;
+		margin-top: 10%;
+		color: #FFFFFF;
+	}
+}
+#searchForm{
+	input,button{
+		border-radius: 0px;	
+	}
+}
+.register_image{
+
+	margin-top: 10%;
+	margin-bottom: 10%;
+}
+.register_form{
+		
+	margin-left: 5%;
+	margin-right: 10%;
+	margin-bottom: 5%;
+		#registerForm{
+				
+			padding-top: 5%;
+			padding-bottom: 5%;
+			
+			label{
+				color: #FFFFFF;
+				font-weight: lighter;
+				font-size: 16px;
+			}
+			input{
+				border-radius: 0px;
+			}
+		}
+		.register_form_buttom{
+			border-radius: 0px;
+		}	
+}
+.textinputborder{
+	border:5px solid #FFF;
+}
+.labelborder{
+	border-left: 5px solid #EEEEEE;
+}

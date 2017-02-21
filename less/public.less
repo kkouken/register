@@ -1,0 +1,49 @@
+// ************** Mixins **************
+.clearfix() {
+  &:before,
+  &:after {
+    content: " "; // 1
+    display: table; // 2
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+.header {
+	margin-bottom: 15px;
+	position: relative;
+
+	&-user {
+		text-align: right;
+
+		> a {
+			margin-left: 15px;
+		}
+	}
+}
+
+.sidebar {
+	margin-top: 100px;
+
+	ul {
+		margin: 0;
+		padding: 0;
+
+		> li {
+			list-style-type: none;
+		}
+	}
+
+	.sidebar-submenu {
+		padding-left: 20px;
+		padding-bottom: 10px;
+		margin-bottom: 10px;
+		border-bottom: 1px solid #ddd;
+
+		> li {
+			margin-top: 5px;
+			list-style-type: circle;
+		}
+	}
+}

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Register</title>
+	<link rel="stylesheet" href="./build/register.css">
+</head>
+<body>	
+		
+			<div class="header">
+				<!-- <div class="row">
+					<div class="col-md-2" style="background-color:#ADADAD">
+						<h1>logo</h1>
+					</div>
+					<div class="col-md-10" style="background-color:#6C6C6C">
+						 <div class="header">
+						 	<h1>Navbar</h1>
+						 </div>
+					</div>
+				</div> -->
+				<nav class="navbar navbar-inverse navbar-fixed-top">
+		            <a class="navbar-brand" href="#">KKOUKEN</a>
+		              <ul class="nav navbar-nav">
+		                <li class="">
+		                    <a class="nav-link" href="#">首页<span class="sr-only">(current)</span></a>
+		                </li>
+		                <li class="">
+		                    <a class="nav-link" href="#">联系</a>
+		                </li>
+		                <li class="">
+		                    <a class="nav-link" href="#">博客</a>
+		                </li>
+		                 <li class="active">
+		                    <a class="nav-link" href="#">注册</a>
+		                </li>
+		                <li class="">
+		                  <div class="btncss">
+		                    <button id="sign" class="btn btn-inverse popover-show" 
+		                      title="Popover title" data-container="body"
+		                      data-toggle="popover" data-template='
+		                      <div class="logindiv">
+		                        <div class="row">
+		                          <div class="col-sm-12">
+		                            <form id="sign" class="form-horizontal" action="">
+		                              <div class="form-group">
+		                                <div class="col-sm-4 text-right">
+		                                  <label for="name" class="control-label">Name:</label>
+		                                </div>
+		                                <div class="col-sm-6">
+		                                  <input type="text" class="form-control" id="username" />
+		                                </div>
+		                                <div class="col-sm-2"></div>
+		                              </div>
+		                              <div class="form-group">
+		                                <div class="col-sm-4 text-right">
+		                                  <label for="password" class="control-label">Password:</label>
+		                                </div>
+		                                <div class="col-sm-6">
+		                                  <input type="text" class="form-control" id="password" />
+		                                </div>
+		                                <div class="col-sm-2"></div>
+		                              </div>
+		                              <div class="form-group">
+		                                <div class="col-md-6"></div>
+		                                <div class="col-md-4">
+		                                  <button class="btn btn-inverse btn-block" type="button" id="login_btn">Login</button>
+		                                </div>
+		                                <div class="col-md-2"></div>
+		                              </div>
+		                            </form>
+		                          </div>
+		                        </div>
+		                      </div> 
+		                      '>
+		                      登录
+		                   </button>
+		                  </div>
+		                </li>
+		              </ul>
+	              <form id="searchForm" class="form-inline navbar-form pull-right">
+	                <input class="form-control" type="text" placeholder="Search">
+	                <button class="btn btn-success-outline" type="submit">Search</button>
+	              </form>
+	          </nav>
+			</div>
+		<div class="container">
+			<div class=" content">
+				<div class="col-md-5">
+					<div class="register_image">
+						<img src="images/image01.jpg" class="img-responsive center-block" />
+					</div>
+				</div>
+				<div class="col-md-7">
+					<blockquote style="display:none">
+	  					<p>注册</p>
+					</blockquote>
+					<div class="register_form" style="display:none">
+						<form id="registerForm" class="form-horizontal" method="post" action="">
+							<div class="form-group">
+								<div class="col-md-2"></div>
+						        <label class="col-md-3 control-label">用户名</label>
+						        <div class="col-md-6">
+						            <input type="text" class="form-control" name="username" 
+										id="username" tabindex="0" role="text" data-toggle="popover" data-placement="top" data-trigger="focus"  data-content="请输入6到20个字符"
+						            />
+						        </div>
+						    </div>
+							<div class="form-group">
+								<div class="col-md-2"></div>
+						        <label class="col-md-3 control-label">手机号</label>
+						        <div class="col-md-6">
+						             <input type="phone" class="form-control" name="phone" 
+										id="phone" tabindex="0" role="text" data-toggle="popover" data-placement="top" data-trigger="focus" data-content="请输入您的手机号码"
+						              />
+						        </div>
+						    </div>
+						    <div class="form-group">
+								<div class="col-md-2"></div>
+						        <label class="col-md-3 control-label">密码</label>
+						        <div class="col-md-6">
+						             <input type="password" class="form-control" name="password" 
+										id="password" tabindex="0" role="text" data-toggle="popover" data-placement="top" data-trigger="focus" data-content="密码由6到18位数字，字母或下划线组成"
+						              />
+						        </div>
+						    </div>
+						    <div class="form-group">
+						    	<div class="col-md-2"></div>
+						        <label class="col-md-3 control-label">确认密码</label>
+						        <div class="col-md-6">
+						             <input type="password" class="form-control" name="passwordconfirm" 
+										id="passwordconfirm" tabindex="0" role="text" data-toggle="popover" data-placement="top" data-trigger="focus"  data-content="请再输入一次上面的密码"
+						             />
+						        </div>
+						    </div>
+						    <div class="form-group">
+						    	<div class="col-md-2"></div>
+						        <label class="col-md-3 control-label">出生日期</label>
+						        <div class="col-md-6 date">
+						            <div class="input-group input-append date" id="datePicker">
+						                <input type="text" class="form-control" name="date" />
+						                <span class="input-group-addon add-on"><span class="glyphicon glyphicon-calendar"></span></span>
+						            </div>
+						        </div>
+						    </div>
+						    <div class="form-group">
+						    	<div class="col-md-2"></div>
+						        <label class="col-md-3 control-label">验证码</label>
+						        <div class="col-md-3">
+						             <input type="text" class="form-control" name="verification_code" id="verification_code" tabindex="0" role="text" data-toggle="popover" data-placement="top" data-trigger="focus"  data-content="请输入手机短信中的验证码"
+						             />
+						        </div>
+						        <div class="col-md-2">
+						        	<button class="btn btn-default">获取验证码</button>
+						        </div>
+						    </div>
+						    <div class="form-group">
+						    	<div class="col-md-2"></div>
+						    	<div class="col-md-3"></div>
+						    	<div class="col-md-6">
+						    		<button type="submit" class="btn btn-lg btn-default btn-block">注册</button>
+						    	</div>
+						    </div>
+						    <div class="form-group">
+						    	<div class="col-md-5"></div>
+						        <div class="col-md-6 checkbox">
+								    <label>
+								      <input type="checkbox">我已阅读并接受<a>网站相关服务条款</a>。
+								    </label>
+							 	</div>
+						    </div>
+						</form>
+					</div>
+				</div>
+				<div class="col-md-2"></div>
+			</div>
+		</div>
+		<div id="footer" class="container">
+			<nav class="navbar navbar-default navbar-fixed-bottom">
+			    <div class="navbar-inner navbar-content-center">
+			        <p class=text-center credit" style="padding: 10px; background-color:#000; color:#FFF">
+			            Copyright 2016 KKOUKEN.COM，All Rights Reserved ICP证：粤 B0-00000000
+			        </p>
+			    </div>
+			</nav>
+		</div>
+<script src="./build/register.js"></script>
+</body>
+</html>
